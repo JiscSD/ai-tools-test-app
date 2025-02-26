@@ -18,11 +18,11 @@ Then run the Flask script with the matching version:
 Run the Flask App in the Correct Directory
 
 Navigate to the folder where your json_formatter_flask.py is located:
-e.g cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/
-python3 json_formatter_flask.py
+                                          e.g cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/ python3 json_formatter_flask.py
 
 
 **Troubleshooting**
+
 if you have issues Uninstall and Reinstall Flask:
                                           pip uninstall flask
                                           pip install flask
