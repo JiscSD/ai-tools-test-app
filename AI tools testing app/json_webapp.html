@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .entry {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script>
+        function displayData(jsonData) {
+            let contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = ""; // Clear previous content
+
+            jsonData.forEach(entry => {
+                let entryDiv = document.createElement('div');
+                entryDiv.classList.add("entry");
+
+                entryDiv.innerHTML = `
+                    <h1>Title: ${entry.Title}</h1>
+                    <p><strong>Description:</strong> ${entry.Description}</p>
+
+                    <h2>Getting Started:</h2>
+                    ${extractSection(entry.Content, "Getting Started")}
+
+                    <h2>Examples of Use:</h2>
+                    ${extractSection(entry.Content, "Examples of Use")}
+
+                    <h2>Key Information:</h2>
+                    ${extractSection(entry.Content, "Key Information")}
+                `;
+
+                contentDiv.appendChild(entryDiv);
+            });
+        }
+
+        function extractSection(content, sectionTitle) {
+            let tempDiv = document.createElement("div");
+            tempDiv.innerHTML = content;
+
+            let section = Array.from(tempDiv.children).find(el => el.tagName === "H2" && el.textContent.includes(sectionTitle));
+
+            if (section) {
+                let sectionContent = [];
+                let nextElement = section.nextElementSibling;
+
+                while (nextElement && nextElement.tagName !== "H2") {
+                    sectionContent.push(nextElement.outerHTML);
+                    nextElement = nextElement.nextElementSibling;
+                }
+
+                return sectionContent.join("");
+            }
+            return "<p>No information available.</p>";
+        }
+
+        fetch('tools.json')
+            .then(response => response.json())
+            .then(data => displayData(data))
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+</body>
+
+</html>
