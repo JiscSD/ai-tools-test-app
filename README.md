@@ -63,3 +63,6 @@ Check Your PYTHONPATH
                                   Run:    echo $PYTHONPATH  # Mac/Linux
                                           echo %PYTHONPATH%  # Windows
 
+Troubleshooting
+	•	If you get a ModuleNotFoundError, ensure you’re using the correct Python environment.
+	•	If Flask runs on a different port (e.g., http://127.0.0.1:5001), use the one shown in the terminal.
