@@ -21,6 +21,38 @@ Navigate to the folder where your json_formatter_flask.py is located:
                                           e.g cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/ python3 json_formatter_flask.py
 
 
+**To Run The App**
+
+Navigate to Your Project Folder
+
+Move into the directory where your json_formatter_flask.py is located:
+                                        e.g. cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/
+
+Run the Flask App
+
+Start the Flask server by running:
+                                        python3 json_formatter_flask.py
+                                                    or
+                                        flask run
+(If using flask run, make sure the FLASK_APP environment variable is set.)
+
+
+Open the Web Interface
+
+Once the app starts, it will give you a local address, usually:
+                                        http://127.0.0.1:5000/
+
+**Stop the Server**
+
+To stop the Flask app, press:
+                                        CTRL + C
+
+Activate the virtual environment: 
+                                          source venv/bin/activate
+
+
+
+
 **Troubleshooting**
 
 if you have issues Uninstall and Reinstall Flask:
