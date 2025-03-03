@@ -28,6 +28,19 @@ Navigate to Your Project Folder
 Move into the directory where your json_formatter_flask.py is located:
                                         e.g. cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/
 
+
+Check If the Virtual Environment Exists
+
+Run:                                    ls venv  # Mac/Linux
+                                        dir venv  # Windows 
+
+If the venv folder is missing, you need to create a new virtual environment:
+                                        python3 -m venv venv
+
+Use the Correct Activation Command
+For Mac/Linux, activate with:      
+                                        source venv/bin/activate                                 
+
 Run the Flask App
 
 Start the Flask server by running:
