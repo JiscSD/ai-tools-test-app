@@ -1,26 +1,30 @@
-**testing app for json files from Jisc AI tools blog**
+**Testing app for json files from Jisc AI tools blog**
 
 
 **To get started check your python version: **
-								_python3 --version_
+					
+     					python3 --version
 
 **Then set up a virtual environment using: **
-								_source venv/bin/activate_  # Mac/Linux
-                                          			_venv\Scripts\activate_  # Windows
+					
+     					source venv/bin/activate  # Mac/Linux
+                                        venv\Scripts\activate  # Windows
 
 **Then, install Flask inside the virtual environment:**
-								_pip install flask_
+					
+     					pip install flask
 
 
 **Then run the Flask script with the matching version:**
-                                         			 _python3 json_formatter_flask.py_
+                                         
+					 python3 json_formatter_flask.py
 
 
 
 **Run the Flask App in the Correct Directory**
 
 Navigate to the folder where your json_formatter_flask.py is located:
-                                         			 e.g cd /Users/You/Desktop/tools\ testing\ app/ python3 json_formatter_flask.py
+                                          e.g cd /Users/You/Desktop/tools\ testing\ app/ python3 json_formatter_flask.py
 
 
 **To Run The App**
@@ -28,38 +32,42 @@ Navigate to the folder where your json_formatter_flask.py is located:
 Navigate to Your Project Folder
 
 **Move into the directory where your json_formatter_flask.py is located:**
-                                       				 e.g. cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/
+                                       	e.g. cd /Users/localadmin/Desktop/AI\ tools\ testing\ app/
 
 
 **Check If the Virtual Environment Exists**
-							Run: 
-       								_ls venv_  # Mac/Linux
-                                        			_dir venv_  # Windows 
+					Run: 
+       								
+	       				   ls venv_  # Mac/Linux
+                                        			
+					   dir venv_  # Windows 
 
 **If the venv folder is missing, you need to create a new virtual environment:**
-                                        			_python3 -m venv venv_
+                                        			
+					   python3 -m venv venv
 
 **Use the Correct Activation Command**
 
 For Mac/Linux, activate with:      
-                                        			_source venv/bin/activate_                                 
+                                        			
+					   source venv/bin/activate                                
 
 **Running the Flask App**
 
 Start the Flask server by running:
                                         			
-					   			_python3 json_formatter_flask.py_
+					   _python3 json_formatter_flask.py_
                                                     			
-									     **or**
+							**or**
 							   
-                                       					   _flask run_
+                                       		_flask run_
 					
-     				(If using flask run, make sure the FLASK_APP environment variable is set.)
+(If using flask run, make sure the FLASK_APP environment variable is set.)
 
 
 Open the Web Interface
 
-_Once the app starts, it will give you a local address, usually:_
+Once the app starts, it will give you a local address, usually:
                                         			http://127.0.0.1:5000/
 
 **Stop the Server**
@@ -68,7 +76,8 @@ To stop the Flask app, press:
                                         			CTRL + C
 
 Activate the virtual environment: 
-                                         			_source venv/bin/activate_
+                                         
+					 source venv/bin/activate
 
 
 
