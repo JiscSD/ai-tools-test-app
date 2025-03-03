@@ -47,11 +47,14 @@ For Mac/Linux, activate with:
 **Running the Flask App**
 
 Start the Flask server by running:
-                                        			_python3 json_formatter_flask.py_
-                                                    			    **or**
-                                       					_flask run_
+                                        			
+					   			_python3 json_formatter_flask.py_
+                                                    			
+									     **or**
+							   
+                                       					   _flask run_
 					
-     				_(If using flask run, make sure the FLASK_APP environment variable is set.)_
+     				(If using flask run, make sure the FLASK_APP environment variable is set.)
 
 
 Open the Web Interface
