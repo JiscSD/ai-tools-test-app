@@ -1,23 +1,23 @@
 **Testing app for json files from Jisc AI tools blog**
 
 
-**To get started check your python version: **
-					
-     					python3 --version
+To get started check your python version: 
 
-**Then set up a virtual environment using: **
-					
-     					source venv/bin/activate  # Mac/Linux
-                                        venv\Scripts\activate  # Windows
+python3 --version
 
-**Then, install Flask inside the virtual environment:**
+Then set up a virtual environment using: 
 					
-     					pip install flask
+     source venv/bin/activate  # Mac/Linux
+     venv\Scripts\activate  # Windows
+
+Then, install Flask inside the virtual environment:
+					
+     pip install flask
 
 
 **Then run the Flask script with the matching version:**
                                          
-					 python3 json_formatter_flask.py
+	python3 json_formatter_flask.py
 
 
 
@@ -36,31 +36,32 @@ Navigate to Your Project Folder
 
 
 **Check If the Virtual Environment Exists**
-					Run: 
+
+Run:
        								
-	       				   ls venv_  # Mac/Linux
+	ls venv # Mac/Linux
                                         			
-					   dir venv_  # Windows 
+	dir venv # Windows 
 
 **If the venv folder is missing, you need to create a new virtual environment:**
                                         			
-					   python3 -m venv venv
+	python3 -m venv venv
 
 **Use the Correct Activation Command**
 
-For Mac/Linux, activate with:      
+For Mac/Linux, activate with:     
                                         			
-					   source venv/bin/activate                                
+	source venv/bin/activate                                
 
 **Running the Flask App**
 
 Start the Flask server by running:
                                         			
-					   _python3 json_formatter_flask.py_
+	python3 json_formatter_flask.py
                                                     			
-							**or**
+	or
 							   
-                                       		_flask run_
+	flask run
 					
 (If using flask run, make sure the FLASK_APP environment variable is set.)
 
@@ -77,7 +78,7 @@ To stop the Flask app, press:
 
 Activate the virtual environment: 
                                          
-					 source venv/bin/activate
+	source venv/bin/activate
 
 
 
@@ -85,14 +86,20 @@ Activate the virtual environment:
 **Troubleshooting**
 
 If you have issues, Uninstall and Reinstall Flask:
-                                          			_pip uninstall flask_
-                                         			_pip install flask_
+
+	pip uninstall flask
+	pip install flask
 
 Check Your PYTHONPATH
-                                  				Run:    _echo $PYTHONPATH_  # Mac/Linux
+
+Run:    
+	
+ 	echo $PYTHONPATH  # Mac/Linux
                                           			
-						     			_echo %PYTHONPATH%_  # Windows
+	echo %PYTHONPATH%  # Windows
 
 Troubleshooting
-							•	If you get a ModuleNotFoundError, ensure you’re using the correct Python environment.
-							•	If Flask runs on a different port (e.g., http://127.0.0.1:5001), use the one shown in the terminal.
+
+•	If you get a ModuleNotFoundError, ensure you’re using the correct Python environment.
+
+•	If Flask runs on a different port (e.g., http://127.0.0.1:5001), use the one shown in the terminal.
