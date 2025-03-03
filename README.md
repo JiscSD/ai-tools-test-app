@@ -1,9 +1,9 @@
 **Testing app for json files from Jisc AI tools blog**
 
 
-To get started check your python version: 
+To get started, check your Python version: 
 
-python3 --version
+	python3 --version
 
 Then set up a virtual environment using: 
 					
