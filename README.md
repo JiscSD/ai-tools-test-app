@@ -2,18 +2,18 @@
 
 
 **To get started check your python version: **
-								python3 --version
+								_python3 --version_
 
 **Then set up a virtual environment using: **
-								source venv/bin/activate  # Mac/Linux
-                                          			venv\Scripts\activate  # Windows
+								_source venv/bin/activate_  # Mac/Linux
+                                          			_venv\Scripts\activate_  # Windows
 
 **Then, install Flask inside the virtual environment:**
-								pip install flask
+								_pip install flask_
 
 
 **Then run the Flask script with the matching version:**
-                                         			 python3 json_formatter_flask.py
+                                         			 _python3 json_formatter_flask.py_
 
 
 
@@ -32,24 +32,24 @@ Navigate to Your Project Folder
 
 
 **Check If the Virtual Environment Exists**
-							_Run: _ 
-       								ls venv  # Mac/Linux
-                                        			dir venv  # Windows 
+							Run: 
+       								_ls venv_  # Mac/Linux
+                                        			_dir venv_  # Windows 
 
 **If the venv folder is missing, you need to create a new virtual environment:**
-                                        			python3 -m venv venv
+                                        			_python3 -m venv venv_
 
 **Use the Correct Activation Command**
 
 For Mac/Linux, activate with:      
-                                        			source venv/bin/activate                                 
+                                        			_source venv/bin/activate_                                 
 
 **Running the Flask App**
 
 Start the Flask server by running:
-                                        			python3 json_formatter_flask.py
-                                                    			    or
-                                       					flask run
+                                        			_python3 json_formatter_flask.py_
+                                                    			    **or**
+                                       					_flask run_
 					
      				_(If using flask run, make sure the FLASK_APP environment variable is set.)_
 
@@ -65,7 +65,7 @@ To stop the Flask app, press:
                                         			CTRL + C
 
 Activate the virtual environment: 
-                                         			source venv/bin/activate
+                                         			_source venv/bin/activate_
 
 
 
@@ -73,13 +73,13 @@ Activate the virtual environment:
 **Troubleshooting**
 
 If you have issues, Uninstall and Reinstall Flask:
-                                          			pip uninstall flask
-                                         			pip install flask
+                                          			_pip uninstall flask_
+                                         			_pip install flask_
 
 Check Your PYTHONPATH
-                                  				Run:    echo $PYTHONPATH  # Mac/Linux
+                                  				Run:    _echo $PYTHONPATH_  # Mac/Linux
                                           			
-					     			echo %PYTHONPATH%  # Windows
+						     			_echo %PYTHONPATH%_  # Windows
 
 Troubleshooting
 							•	If you get a ModuleNotFoundError, ensure you’re using the correct Python environment.
